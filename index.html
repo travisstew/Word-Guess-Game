@@ -5,36 +5,63 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
-  <style>
-    ul{
-      list-style-type: none;
-      margin-right: 20px;
-      padding: 0%;
-    }
-    li{
-      display: inline;
-      padding-right: 20px;
-      text-align: center;
-      font-size: 100px;
-    }
-  </style>
   
+  <style>
+      ul{
+        list-style-type: none;
+        margin-right: 20px;
+        padding: 0%;
+      }
+      li{
+        display: inline;
+        padding-right: 20px;
+        text-align: center;
+        font-size: 100px;
+      }
+    </style>
+   
+  
+  
+
 </head>
 <body>
    
       <button id="btnstart">Start Game</button>
-      <!-- <ul id="gameSpots">
-      
-      </ul>  -->
-
+     
       <input type="text" onkeydown="keyPress(event)">
       <ul id="gameSpots">
         
       </ul>  
   
+      <div>
+        <h5>Chances Left</h5>
+         <p id="trys">4</p>
+      </div>
+
+<!--   
+   <div class="container">
+     <div class="row">
+       <div class="col-md-12 text-center pb-md-5"><h1>HangMan</h1></div>
+     </div>
+      <div class="row">
+        <div class="col-md-4">
+          <button id="start-btn"class="mb-md-3 btn-sm">Start Game</button>
+          <h6>Guesses Left<span class="badge badge-secondary">0</span></h6>
+
+        </div>
+        <div class="col-md-8">
+          <input id="user-input"type="text" >
+          <ul id="gameSpots">
+            
+          </ul>  
+        </div>
+      </div>
+   </div> -->
 
 
       
 </body>
 <script src="assets/javascript/game.js"></script>
+
+
 </html>
