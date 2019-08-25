@@ -11,44 +11,10 @@
   <link href="https://fonts.googleapis.com/css?family=Allerta+Stencil|Carter+One|Press+Start+2P&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
   <script src="assets/javascript/game.js"></script>
-  <!-- <style>
-      ul{
-        list-style-type: none;
-        margin-right: 20px;
-        padding: 0%;
-      }
-      li{
-        display: inline;
-        padding-right: 20px;
-        text-align: center;
-        font-size: 60px;
-      }
-      body{
-        /* background: black; */
-        background:url('../assets/images/QVFUaZP.jpg');
-      }
-      *{
-        font-family:  'Allerta Stencil', sans-serif;
-      }
-
-  </style> -->
-  
 
 </head>
 <body>
-<!--    
-      <button id="btnstart">Start Game</button>
-     
-      <input type="text" onkeydown="keyPress(event)">
-      <ul id="gameSpots">
-        
-      </ul>  
-  
-      <div>
-        <h5>Chances Left</h5>
-         <p id="trys">4</p>
-      </div>
- -->
+
  <div class="container">
     <div class="row">
       <div class="col-sm-12"><h1 class="text-center text-white">HangMan</h1></div>
@@ -64,6 +30,16 @@
         <h6>Keys Pressed</h6>
         <div id="letters" class="alert alert-secondary" role="alert">
           
+        </div>
+        <p>
+          <button class="btn btn-outline-secondary btn-sm" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+            Hint
+          </button>
+        </p>
+        <div class="collapse text-dark" id="collapseExample">
+          <div class="card card-body">
+            Look in console for answer
+          </div>
         </div>
       </div>
     
@@ -82,6 +58,9 @@
   </div>
       
 </body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script src="assets/javascript/game.js"></script>
 
 
