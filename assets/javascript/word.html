@@ -18,7 +18,7 @@
         display: inline;
         padding-right: 20px;
         text-align: center;
-        font-size: 100px;
+        font-size: 60px;
       }
       body{
         background: black;
@@ -36,13 +36,13 @@
     </div>
     <div class="row"> 
       <div class="col-md-3 text-white pt-md-3">
-        <h4>Start Game</h4>
+        <h6>Start Game</h6>
         <button id="btnStart" type="button" class="btn btn-outline-secondary btn-sm">Start</button>
-        <h4 >Reset Game</h4>
+        <h6 >Reset Game</h6>
         <button id="reset" type="button" class="btn btn-outline-secondary btn-sm">Reset</button>
-        <h4>Chances Left</h4>
+        <h6>Chances Left</h6>
         <h1><span id="trys" class="badge badge-dark">5</span></h1>
-        <h4>Keys Pressed</h4>
+        <h6>Keys Pressed</h6>
         <div id="letters" class="alert alert-secondary" role="alert">
           
         </div>
@@ -50,8 +50,9 @@
     
 
 
-      <div class="col-md-9" id="main-section">
-          <ul id="gameSpots" class="text-white" >
+      <div class="col-md-9 align-self-center" id="main-section">
+          
+          <ul id="gameSpots" class="text-white text-center " >
 
           </ul>
 
@@ -74,6 +75,7 @@ for(var t =0; t< wordLength; t++){
   // console.log(wordSelect.charAt(t));
   spaces.push(wordSelect.charAt(t))
 }
+
 $('#reset').click(function() { 
   location.reload();
 });
@@ -118,8 +120,7 @@ $("#btnStart").on('click',function(){
     }
          }else{
            console.log('u lose ');
-
-          $('#main-section').html("<h1> YOU LOSE, THE ANSWER WAS " + wordSelect + "</h1>").attr('class','text-white');
+          $('#main-section').html("<h5> YOU LOSE, THE ANSWER WAS " + wordSelect + "</h5>").attr('class','text-white');
            
          }
 

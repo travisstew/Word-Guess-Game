@@ -4,9 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>HangMan</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   
-  <style>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Allerta+Stencil|Carter+One|Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/javascript/game.js"></script>
+  <!-- <style>
       ul{
         list-style-type: none;
         margin-right: 20px;
@@ -16,16 +21,22 @@
         display: inline;
         padding-right: 20px;
         text-align: center;
-        font-size: 100px;
+        font-size: 60px;
       }
-    </style>
-   
-  
+      body{
+        /* background: black; */
+        background:url('../assets/images/QVFUaZP.jpg');
+      }
+      *{
+        font-family:  'Allerta Stencil', sans-serif;
+      }
+
+  </style> -->
   
 
 </head>
 <body>
-   
+<!--    
       <button id="btnstart">Start Game</button>
      
       <input type="text" onkeydown="keyPress(event)">
@@ -37,28 +48,38 @@
         <h5>Chances Left</h5>
          <p id="trys">4</p>
       </div>
-
-<!--   
-   <div class="container">
-     <div class="row">
-       <div class="col-md-12 text-center pb-md-5"><h1>HangMan</h1></div>
-     </div>
-      <div class="row">
-        <div class="col-md-4">
-          <button id="start-btn"class="mb-md-3 btn-sm">Start Game</button>
-          <h6>Guesses Left<span class="badge badge-secondary">0</span></h6>
-
-        </div>
-        <div class="col-md-8">
-          <input id="user-input"type="text" >
-          <ul id="gameSpots">
-            
-          </ul>  
+ -->
+ <div class="container">
+    <div class="row">
+      <div class="col-sm-12"><h1 class="text-center text-white">HangMan</h1></div>
+    </div>
+    <div class="row"> 
+      <div class="col-md-3 text-white pt-md-3">
+        <h6>Start Game</h6>
+        <button id="btnStart" type="button" class="btn btn-outline-secondary btn-sm">Start</button>
+        <h6 >Reset Game</h6>
+        <button id="reset" type="button" class="btn btn-outline-secondary btn-sm">Reset</button>
+        <h6>Chances Left</h6>
+        <h1><span id="trys" class="badge badge-dark">5</span></h1>
+        <h6>Keys Pressed</h6>
+        <div id="letters" class="alert alert-secondary" role="alert">
+          
         </div>
       </div>
-   </div> -->
+    
 
 
+      <div class="col-md-9 align-self-center" id="main-section">
+          
+          <ul id="gameSpots" class="text-white text-center " >
+
+          </ul>
+
+      </div>
+        
+      </div>
+      
+  </div>
       
 </body>
 <script src="assets/javascript/game.js"></script>
